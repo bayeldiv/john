@@ -5,6 +5,9 @@
   border: none;
   font-family: Heebo;
 }
+.ion {
+  display: none;
+}
 .container {
   width: 85%;
   margin: 0 auto;
@@ -33,6 +36,10 @@
   flex-direction: column;
   gap: 20px;
 }
+.main img {
+  max-width: 300px;
+  width: 100%;
+}
 .main p {
   width: 450px;
 }
@@ -48,6 +55,7 @@ section {
 .main-text p {
   width: 490px;
   line-height: 26px;
+  font-size: 16px;
 }
 .main-text button {
   width: 200px;
@@ -59,7 +67,6 @@ section {
 }
 #post {
   background: #bbe1fa40;
-  height: 490px;
   padding: 5px 0;
 }
 .post-top {
@@ -69,6 +76,7 @@ section {
 }
 .post-top h1 {
   font-weight: 380;
+  font-size: 22px;
 }
 .post-top a {
   color: #00a8cc;
@@ -78,6 +86,9 @@ section {
   justify-content: space-between;
 }
 .post {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   background: #ffffff;
   width: 415px;
   height: 230px;
@@ -86,39 +97,22 @@ section {
 .post h1 {
   width: 370px;
   height: 85px;
+  font-size: 26px;
 }
-.post h4 span {
-  margin-inline: 26px;
-}
+
 .post h4 {
+  display: flex;
+  gap: 1px;
   width: 370px;
   height: 50px;
+  font-size: 18px;
 }
 .post p {
   width: 368px;
   height: 115px;
+  font-size: 16px;
 }
-.post-2 {
-  background: #ffffff;
-  width: 415px;
-  height: 230px;
-  padding: 25px 20px;
-}
-.post-2 h1 {
-  width: 370px;
-  height: 85px;
-}
-.post-2 h4 span {
-  margin-inline: 26px;
-}
-.post-2 h4 {
-  width: 370px;
-  height: 50px;
-}
-.post-2 p {
-  width: 368px;
-  height: 117px;
-}
+
 #work {
   display: flex;
   margin: 20px 0;
@@ -128,27 +122,45 @@ section {
   flex-direction: column;
 }
 .work h1 {
-  padding: 20px 30px;
+  padding: 20px 0;
+  font-size: 30px;
+  font-weight: 700;
 }
 .box {
   display: flex;
-  gap: 100px;
+  gap: 20px;
 }
 .box img {
-  margin: 25px;
+  max-width: 246px;
+  width: 100%;
+  max-height: 180px;
+  height: 100%;
 }
 .box-date p {
   width: 700px;
-  height: 51px;
+}
+.box-text p {
+  font-size: 16px;
+  font-weight: 400;
+  width: 594px;
 }
 .box-date {
   display: flex;
-  font-size: 16px;
-  font-weight: 900;
+  gap: 10px;
+  padding-block: 10px;
+}
+.box img {
+  max-width: 320px;
+  width: 100%;
 }
 .box-date span {
+  font-size: 16px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
   padding: 0 13px;
   background: #142850;
+  width: 40px;
   color: white;
   border-radius: 15px;
 }
@@ -162,7 +174,6 @@ section {
 .box-text {
   justify-content: space-between;
   width: 390px;
-  height: 35px;
 }
 #logo {
   padding: 80px 0;
